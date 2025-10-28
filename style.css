@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  
+
+  ul {
+    display: grid;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+
+    li {
+      height: 15vh;
+      border: 1px solid #000;
+      border-radius: 20px;
+      overflow: hidden;
+
+      &.selected {
+        box-shadow: 0 0 10px 5px orange;
+      }
+
+      &.matched {
+        box-shadow: 0 0 10px 5px lime;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
